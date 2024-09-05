@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ETCH-A-SKETCH</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>ETCH-A-SKETCH</h1>
+      <p>CREATE YOUR PIXEL ART</p>
+      <div class="sketch-container">
+        <div class="setting-container">
+          <input type="color" id="color-picker" />
+          <div class="mode-buttons">
+            <button
+              type="button"
+              class="mode-btn active"
+              value="colorFill"
+              aria-label="colorFill mode"
+            >
+              Color Fill
+            </button>
+            <button
+              type="button"
+              class="mode-btn"
+              value="rainbow"
+              aria-label="Rainbow mode"
+            >
+              Rainbow
+            </button>
+            <!-- <button
+              type="button"
+              class="mode-btn"
+              value="shadow"
+              aria-label="Shadow mode"
+            >
+              Shadow
+            </button>
+            <button
+              type="button"
+              class="mode-btn"
+              value="lighten"
+              aria-label="Lighten mode"
+            >
+              Lighten
+            </button> -->
+            <button
+              type="button"
+              class="mode-btn"
+              value="eraser"
+              aria-label="Eraser mode"
+            >
+              Eraser
+            </button>
+            <button
+              type="button"
+              class="clear-btn"
+              value="clear"
+              aria-label="Clear canvas"
+            >
+              Clear
+            </button>
+          </div>
+
+          <input
+            id="grid-input"
+            type="range"
+            min="1"
+            max="64"
+            value="16"
+            step="1"
+          />
+          <label for="grid-input"
+            >grid size : <span id="grid-size-content"></span
+          ></label>
+        </div>
+        <div class="grid-container"></div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

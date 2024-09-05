@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: clamp(2.0736rem, 1.6272rem + 2.2319vw, 3.3569rem);
+  letter-spacing: 0.2ch;
+}
+
+p {
+  margin-top: 2ch;
+  font-size: clamp(1.2rem, 1.0196rem + 0.9022vw, 1.7188rem);
+  letter-spacing: 0.5ch;
+}
+
+.sketch-container {
+  width: 100%;
+  height: 100%;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+}
+
+.setting-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3ch;
+}
+
+input[type="color"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  height: 4rem;
+  width: 4rem;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="color"]::-webkit-color-swatch {
+  border-radius: 50%;
+  border: none;
+}
+
+.mode-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 3ch;
+}
+
+button {
+  padding: 8px 24px;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button.active {
+  color: #fff;
+  background-color: black;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(auto-fit, 1fr);
+  width: 500px;
+  height: 500px;
+  border: 5px solid #d6d3d1;
+}
+
+.grid-cell {
+  border: 1px solid #d6d3d1;
+  user-select: none;
+}
